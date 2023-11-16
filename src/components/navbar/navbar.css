@@ -1,0 +1,43 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(84, 58, 226, 0.9) 0%, #2b5ef7 100%),
+    url("../../assets/hero-bg.jpg") center center no-repeat;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px 0 5px 0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+  justify-content: center;
+}
+
+.header-scrolled a {
+  color: #ffffff;
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.header-scrolled.navbar {
+  height: 90px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-icon-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 40%;
+
+  background: linear-gradient(45deg, rgba(84, 58, 226, 0.9) 0%, #2b5ef7 100%),
+    url("../../assets/hero-bg.jpg") center center no-repeat;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 4px 0 4px 0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}

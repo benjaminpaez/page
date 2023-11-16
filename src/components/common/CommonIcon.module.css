@@ -1,0 +1,38 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 17rem;
+  height: 15rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card Button {
+  margin-top: 10px;
+}
+
+.button {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 17rem;
+  height: 15rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+  border-radius: 10px;
+  padding: 10px 20px;
+  outline: none;
+}

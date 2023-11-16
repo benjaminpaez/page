@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    flex-wrap: wrap
+}
+
+.container:hover{
+    cursor: pointer;
+}

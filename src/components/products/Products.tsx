@@ -20,7 +20,6 @@ export const Products = () => {
   };
 
 
-
   
   useEffect(() => {
     axios
@@ -33,24 +32,27 @@ export const Products = () => {
   }, []);
 
   useEffect(() => {
-    if (selectedId !== 0) {
-      if (selectedId !== 0) { // Corregir esta línea
-        messData(originalProducts);
-        setActiveButton(selectedId);
-      } else {
+    if (selectedId == 0) { 
+      messData(originalProducts);
+      setActiveButton(selectedId);
+    } else {
+      if (selectedId !== 0) {
         axios
-          .get(`https://api-pirela.onrender.com/products?categoryId=${selectedId}`) // Eliminar comillas dobles
+          .get(`https://api-pirela.onrender.com/products?categoryId=${selectedId}`) 
           .then((res) => {
             setProducts(res.data);
+
           })
           .catch((e) => console.log(e));
       }
     }
   }, [selectedId, originalProducts]);
+
+  
   
   const handleClick = (buttonId: number) => {
-    setSelectedId(buttonId);
-    setActiveButton(buttonId);
+    setSelectedId(buttonId)
+    setActiveButton(buttonId)
   };
 
   return (
@@ -76,8 +78,8 @@ export const Products = () => {
               name="TODOS"
               isActive={activeButton === 0}
               onClick={() => {
-                messData(originalProducts);
-                handleClick(0);
+                messData(originalProducts)
+                handleClick(0)
               }}
             />
 

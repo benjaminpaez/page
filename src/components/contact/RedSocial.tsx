@@ -7,8 +7,8 @@ import fc from "./img/Facebook.jpg";
 
 export const RedSocial = () => {
   return (
-    <Grid container >
-      <Grid item md={12}>
+    <Grid container style={{marginBottom: "3rem"}} >
+      <Grid item md={12} >
         <CommonHeaders title="REDES SOCIALES" description="" />
       </Grid>
       <Grid
@@ -20,10 +20,10 @@ export const RedSocial = () => {
         wrap="wrap"
       >
         <Grid item >
-          <ButtonRed  backgroundImage={ig} onClick={handleInstagram} />
+          <ButtonRed  backgroundImage={ig} borderColor="red" onClick={handleInstagram} />
         </Grid>
         <Grid item>
-          <ButtonRed backgroundImage={fc} onClick={handleFacebook} />
+          <ButtonRed backgroundImage={fc} borderColor="blue" onClick={handleFacebook} />
         </Grid>
       </Grid>
     </Grid>

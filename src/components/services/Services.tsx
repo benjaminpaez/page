@@ -23,21 +23,21 @@ export const Services: React.FC = () => {
           <CommonIcon
             icon={DesignServicesOutlinedIcon}
             title="Asesoramiento en diseño"
-            description="Te ayudamos a elegir las baldosas y revestimientos adecuados a tus preferencias estéticas y a la funcionalidad de tus proyectos"
+            description="Te ayudamos a elegir los productos adecuados a tus preferencias estéticas y a la funcionalidad de tus proyectos"
           />
         </Grid>
         <Grid item sm={12} md={3}>
           <CommonIcon
             icon={HandymanOutlinedIcon}
             title="Servicios de instalación"
-            description="Si necesitas colocar nuestros productos en una habitación pequeña o en un proyecto a gran escala, podemos encargarnos de todo el proceso de instalación"
+            description="Podemos encargarnos de todo el proceso de instalación de los productos, ya sea en una habitación pequeña o en un proyecto a gran escala"
           />
         </Grid>
         <Grid item sm={12} md={3}>
           <CommonIcon
             icon={LocalShippingOutlinedIcon}
             title="Entrega a domicilio"
-            description="Facilitamos el proceso de adquisición de baldosas y revestimientos al ofrecer servicios de entrega a domicilio"
+            description="Facilitamos el proceso de adquisición de nuestros prodcutos al ofrecer servicios de entrega a domicilio"
           />
         </Grid>
       </Grid>

@@ -13,8 +13,8 @@ export const ButtonLink: React.FC<ButtonL> = ({
     color: "#5846f9"
   }
   return (
-    <button onClick={onClick} style={{marginBottom: '2rem'}}>
-      <Paper className={styleCard.button} elevation={2} style={{cursor: 'pointer'}}>
+    <button onClick={onClick} style={{marginBottom: '2rem', borderRadius: "60%"}}>
+      <Paper className={styleCard.button} elevation={2} style={{cursor: 'pointer', borderRadius: "60%"}}>
         <Box display="flex" justifyContent="center" marginBottom={2}>
           <Icon fontSize="large" style={iconStyle} />
         </Box>

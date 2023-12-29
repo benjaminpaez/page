@@ -5,7 +5,7 @@ import portada from "./front.jpg";
 export const StartPage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Grid container spacing={0.5} mt={0}>
+      <Grid container spacing={0.5} mt={1}>
         <Grid
           item
           xs={12}
@@ -31,9 +31,9 @@ export const StartPage: React.FC = () => {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <div className={styles.imageContainer}>
+          <>
             <img src={portada} alt="back" className={styles.image} />
-          </div>
+          </>
         </Grid>
       </Grid>
     </div>

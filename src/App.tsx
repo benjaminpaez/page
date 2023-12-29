@@ -38,11 +38,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <AnimatedSection>
-        <section id="inicio">
-          <StartPage />
-        </section>
-      </AnimatedSection>
+  
+      <section id="inicio">
+        <StartPage />
+      </section>
+      
       <FloatingWhatsApp 
         phoneNumber="+54 3644660035" 
         accountName="Pirela"

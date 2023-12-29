@@ -19,9 +19,9 @@ export const CommonIcon: React.FC<Icon> = ({
       <Typography variant="h5" gutterBottom sx={{ textAlign: "center" }}>
         {title}
       </Typography>
-      <Typography variant="body1" sx={{ textAlign: "center" }}>
+      <p style={{ textAlign: "center" }}>
         {description}
-      </Typography>
+      </p>
       
     </Paper>
   );

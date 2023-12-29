@@ -16,7 +16,7 @@ export const handleEmail = () => {
 };
 export const handleInstagram = () => {
   window.open(
-    "https://www.instagram.com/pirela.pisos_y_revestimientos/",
+    "https://www.instagram.com/pirelapiso/",
     "_blank"
   );
 };

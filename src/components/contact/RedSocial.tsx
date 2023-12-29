@@ -1,11 +1,13 @@
 import { Grid } from "@mui/material";
 import { CommonHeaders } from "../common/CommonHeaders";
-import { ButtonRed } from "./common/ButtonRed";
 import { handleInstagram, handleFacebook } from "./common/handleLinks";
-import ig from "./img/Instagram.jpg";
-import fc from "./img/Facebook.jpg";
+import insta from './img/Instagram.svg'
+import face from './img/Facebook.svg';
+import './redsocial.css'
+
 
 export const RedSocial = () => {
+  
   return (
     <Grid container style={{marginBottom: "3rem"}} >
       <Grid item md={12} >
@@ -20,10 +22,15 @@ export const RedSocial = () => {
         wrap="wrap"
       >
         <Grid item >
-          <ButtonRed  backgroundImage={ig} borderColor="red" onClick={handleInstagram} />
+          <a onClick={handleFacebook} >
+            <img src={face} alt="face" className="button" />
+          </a>
+      
         </Grid>
         <Grid item>
-          <ButtonRed backgroundImage={fc} borderColor="blue" onClick={handleFacebook} />
+          <a onClick={handleInstagram}>
+            <img src={insta} alt="insta" className="button" />
+          </a>
         </Grid>
       </Grid>
     </Grid>
